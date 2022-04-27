@@ -1,5 +1,3 @@
-<!--meniu cu adaugare task, lista taskuri, vizualizare profil, deconectare
-sablonare pt paginile din meniu, nu intra si deconectare aici la sablonare -->
 
 <ul class="nav nav-pills">
   <li class="nav-item">
