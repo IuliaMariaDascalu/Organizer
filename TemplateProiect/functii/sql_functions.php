@@ -18,8 +18,6 @@ function clearData ($input, $link)
     return $input;
 }
 
-//verific daca exista email-ul in baza de date
-
 function existentaEmail ($adrEmail) 
 {
     $link = conectareBD();
@@ -30,8 +28,6 @@ function existentaEmail ($adrEmail)
     
     return $utilizator;
 }
-
-//functie de inregistrare a utilizatorului
 
 function inregistrareUtilizator ($email, $parola, $nume, $prenume, $pozaProfil)
 {
@@ -52,8 +48,6 @@ function inregistrareUtilizator ($email, $parola, $nume, $prenume, $pozaProfil)
    return $rezultat;
    
 }
-
-//functie pentru conectarea utilizatorului
 
 function conectareUtilizator ($email, $parola) {
     $link = conectareBD();
@@ -88,7 +82,6 @@ function adaugaTask ($userId, $titlu, $data, $tip, $descriere, $status = 0)
     $desciere = clearData($descriere, $link);
     
     $query = "INSERT INTO task VALUES(NULL, $userId, '$titlu', '$data', '$tip', '$descriere', 0)";
-    //var_dump($query);die();
     return mysqli_query($link, $query);
 }
 
