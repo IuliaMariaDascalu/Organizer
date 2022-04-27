@@ -1,10 +1,6 @@
 <?php
  $user = existentaEmail($_SESSION['user']);
  $utilizator = preiaUtilizatorDupaId($user['id']);
- //var_dump($utilizator); die();
- //var_dump($user); die();
- //var_dump($utilizator); die();
-  
 ?>
 <table >
     
@@ -73,8 +69,6 @@
     
 </form>
 <?php
-//var_dump(actualizeazaParola('elena@2.ro', '123456'));
-//die();
  $user = existentaEmail($_SESSION['user']);
 if (isset($_POST['actualizeaza'])) {
     $parolaNoua = $_POST['newPass'];
@@ -87,16 +81,6 @@ if (isset($_POST['actualizeaza'])) {
         print 'Parola actuala nu este corecta!';
     }
     }
-    
-    $phpFileUploadedErrors =  array (0 => 'There is no error, the file uploaded with success',
-    1 => 'The uploaded file exceeds the upload_max_filesize directive in php.ini',
-    2 => 'The uploaded file exceeds the MAX_FILE_SIZE directive that was specified in the HTML form',
-    3 => 'The uploaded file was only partially uploaded',
-    4 => 'No file was uploaded',
-    6 => 'Missing a temporary folder',
-    7 => 'Failed to write file to disk.',
-    8 => 'A PHP extension stopped the file upload.',
-);
 
 if (isset($_POST['incarca'])) {
     
