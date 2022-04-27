@@ -1,0 +1,44 @@
+
+
+#banner {
+    background-color: plum;
+    height: 120px;
+}
+
+.nav-item {
+     padding-bottom: 15px;
+     padding-top:10px;
+     margin-bottom: 10px;
+     margin-left: 5px;
+     
+}
+
+#subsol {
+    background-color: plum;
+    text-align: right;
+    margin-top: 15px;
+}
+#conect tr {
+    margin-bottom: 5px;
+}
+#inreg tr {
+    margin-bottom: 5px;
+}
+
+#meniu_neconectat ul {
+    list-style-type: none;
+    
+}
+
+#meniu_neconectat li {
+    padding: 5px;
+    
+}
+
+#meniu_neconectat a {
+    text-decoration: none;
+}
+#poza {
+    width: 150px;
+  
+}
