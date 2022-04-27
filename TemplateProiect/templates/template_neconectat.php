@@ -1,6 +1,3 @@
-<!--meniu cu home, conectare, inregistrare
-sablonare pt paginile din meniu -->
-
 <nav class="nav flex-column">
   <a class="nav-link" href="index.php"><i class="fa fa-calendar" style="font-size:24px"></i>Despre</a>
   <a class="nav-link" href="index.php?page=1"><i class="fa fa-address-book" style="font-size:24px"></i>Conectare</a>
