@@ -1,13 +1,6 @@
 <!DOCTYPE html>
-<!--
-To change this license header, choose License Headers in Project Properties.
-To change this template file, choose Tools | Templates
-and open the template in the editor.
--->
 <?php
 require_once 'functii/sql_functions.php';
-//var_dump(conectareUtilizator('elena@2.ro', '123')); die();
-
 session_start();
 if (isset($_POST['conectare'])) {
     $email = $_POST['email'];
@@ -41,7 +34,6 @@ if (isset($_POST['conectare'])) {
     <body>
         <header id="banner"></header>
         <?php
-        //momentan comentati/decomentati unul din template-uri in functie de sectiunea la care vreti sa lucrati
             if (isset($_SESSION['user'])) {
             require_once 'templates/template_conectat.php';
         }else {
