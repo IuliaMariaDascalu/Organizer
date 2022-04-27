@@ -1,5 +1,4 @@
 <?php
-//var_dump($_SESSION);
 $user = existentaEmail($_SESSION['user']);
 ?>
 
@@ -41,10 +40,8 @@ if (isset($_POST['adauga'])) {
     $data = $_POST['data'];
     $tip = $_POST['tip'];
     $descriere = $_POST['descriere'];
-    
-   
+
     $adaugareInBD = adaugaTask ($user['id'], $titlu, $data, $tip, $descriere);
-     //var_dump($adaugareInBD); die();
     
     if ($adaugareInBD) {
         print 'Adaugat cu succes';
